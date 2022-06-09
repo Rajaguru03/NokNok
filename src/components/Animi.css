@@ -1,0 +1,299 @@
+.cricle1{
+    position: absolute;
+    top: 90px;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.365), rgba(0, 0, 0, 0.353));
+    left: 40px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.209);
+}
+.cricle2{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.365), rgba(0, 0, 0, 0.353));
+    z-index: -1;
+    bottom: -20px;
+    right: 30px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.209);
+}
+.cricle3{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.365), rgba(0, 0, 0, 0.353));
+    z-index: 1;
+    top: 1100px;
+    left: 50px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.209);
+}
+
+/* ******************************** Solution Animi ***************************************** */
+
+/* .S-box::before, .S-box::after{
+  content: '';
+  position: absolute;
+  background: #171717;
+  width: 100%;
+  height: 40%;
+  z-index: -10;
+  border-radius: 15px 15px 0 0;
+  transition: all .4s;
+}
+.S-box::before{
+  top: 0;
+}
+.S-box:hover::before{
+  bottom: 10px;
+  height: 60%;
+  border-radius: 0 0 15px 15px;
+}
+.icon{
+  width: 60px;
+  height: 60px;
+  background: #DA0037;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.S-box:hover .icon{
+  box-shadow: 0 0 10px red;
+}
+.S-box h4{
+  margin-top: 0.5em;
+} */
+
+
+
+/* ********************************* Global Animi ******************************************* */
+
+.G{
+    height: auto;
+    width: 100%;
+    padding: 90px 0 90px 0;
+}
+.G-img{
+    position: absolute;
+    top: 40px;
+    left: 22%;
+    z-index: 999;
+} 
+.ping{
+    position: relative;
+    left: 28%;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 29, 88, 0.788);
+    border-radius: 100%;
+    -webkit-animation: ping 3s ease-out infinite both;
+	        animation: ping 3s ease-out infinite both;
+}
+@-webkit-keyframes ping {
+    0% {
+      -webkit-transform: scale(0.2);
+              transform: scale(0.2);
+      opacity: 0.8;
+    }
+    80% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(2.2);
+              transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+  @keyframes ping {
+    0% {
+      -webkit-transform: scale(0.2);
+              transform: scale(0.2);
+      opacity: 0.8;
+    }
+    80% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(2.2);
+              transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+  
+/* *********** SignIn & SignUp pages *********** */
+.circle-S1{
+  position: absolute;
+  top: 30px;
+  z-index: -1;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.365), rgba(0, 0, 0, 0.353));
+  left: 60px;
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.209);
+}
+.circle-S2{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.365), rgba(0, 0, 0, 0.353));
+  z-index: -1;
+  bottom: 10px;
+  right: 30px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.209);
+}
+
+
+/* ************************** Give Interview Page ************************************* */
+
+.education {
+  --bg-color: #ffbf00;
+  --bg-color-light: #ffeeba;
+  --text-color-hover: #000000;
+  --box-shadow-color: rgba(254, 227, 128, 0.483);
+}
+.cards {
+  width: 270px;
+  height: 331px;
+  background: #fff;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.cards:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.cards:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.cards:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.cards:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.cards:hover p {
+  color: var(--text-color-hover);
+}
+
+.cards:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
+.cards p {
+  font-size: 17px;
+  color: #4C5656;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  transition: opacity 0.3s ease-out;
+}
+.circle  {
+  z-index: 10000;
+  transform: translateZ(0);
+}
+.overlay {
+  width: 128px;
+  position: absolute; 
+  height: 128px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 66px;
+  left: 66px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}
+@media only screen and (max-width:1195px) {
+  .overlay {
+    width: 128px;
+    position: absolute; 
+    height: 128px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 66px;
+    left: 43px;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .overlay {
+    width: 128px;
+    position: absolute; 
+    height: 128px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 66px;
+    left: 58px;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+  }
+}
+@media only screen and (max-width:575px){
+  .overlay {
+    width: 128px;
+    position: absolute; 
+    height: 128px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 66px;
+    left: 71px;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+  }
+}

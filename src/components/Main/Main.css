@@ -1,0 +1,8 @@
+.head p{
+  padding:0 25px;
+  color: black;
+}
+.head p:hover{
+  color: orange;
+  transition: .5s;
+}
