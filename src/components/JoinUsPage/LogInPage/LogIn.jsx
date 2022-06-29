@@ -38,7 +38,7 @@ export default function SignIn() {
         <CssBaseline />
         <Box className='Sign-box'
           sx={{
-            marginTop: 15,
+            marginTop: 10,
             padding:8,
             display: 'flex',
             flexDirection: 'column',
@@ -81,7 +81,7 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              href='/Home'
+              href='/Main'
             >
               Sign In
             </Button>

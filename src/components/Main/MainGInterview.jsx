@@ -1,12 +1,11 @@
 import React from 'react'
-import '../../App.css'
-import Header from './Header'
+import './Main.css'
+import Header from './MainHeader'
 import '../Animi.css'
 import { Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
-import Footer from './Footer'
 
-function GInterview() {
+function MainGInterview() {
   return (
     <>
     <Header/>
@@ -19,10 +18,8 @@ function GInterview() {
           </div>
           <div>
             <h1> Give Your Interview </h1>
-            {/* <hr/> */}
             <p className='my-4'>Below are some of the interview questions under various subjects. Please give your <br/>interview by answering the questions under each interview.</p>
           </div>
-          {/* <h4>If you would like to create a public interview <Link to='/SignIn'>click here</Link></h4> */}
       </div>
       <div className='GContent'>
         <Container>
@@ -73,11 +70,8 @@ function GInterview() {
         </Container>
       </div>
     </div>
-    <div className='extra'></div>
-    
-    <Footer/>
     </>
   )
 }
 
-export default GInterview
+export default MainGInterview

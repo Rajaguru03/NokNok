@@ -1,3 +1,7 @@
+.row{
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0;
+}
 .cricle1{
     position: absolute;
     top: 90px;
@@ -77,12 +81,13 @@
     height: auto;
     width: 100%;
     padding: 90px 0 90px 0;
+    position: relative;
 }
 .G-img{
     position: absolute;
-    top: 40px;
-    left: 22%;
+    margin: 0 auto;
     z-index: 999;
+    width: 600px;
 } 
 .ping{
     position: relative;
@@ -166,8 +171,9 @@
 .cards {
   width: 270px;
   height: 331px;
+  margin: 0 5px;
   background: #fff;
-  border-top-right-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -247,25 +253,23 @@
   transform: translateZ(0);
 }
 .overlay {
-  width: 128px;
+  width: 121px;
   position: absolute; 
-  height: 128px;
+  height: 121px;
   border-radius: 50%;
   background: var(--bg-color);
-  top: 66px;
-  left: 66px;
+  top: 71px;
   z-index: 0;
   transition: transform 0.3s ease-out;
 }
 @media only screen and (max-width:1195px) {
   .overlay {
-    width: 128px;
+    width: 121px;
     position: absolute; 
-    height: 128px;
+    height: 121px;
     border-radius: 50%;
     background: var(--bg-color);
     top: 66px;
-    left: 43px;
     z-index: 0;
     transition: transform 0.3s ease-out;
   }
@@ -273,26 +277,37 @@
 
 @media only screen and (max-width:767px){
   .overlay {
-    width: 128px;
+    width: 121px;
     position: absolute; 
-    height: 128px;
+    height: 121px;
     border-radius: 50%;
     background: var(--bg-color);
     top: 66px;
-    left: 58px;
     z-index: 0;
     transition: transform 0.3s ease-out;
   }
 }
 @media only screen and (max-width:575px){
   .overlay {
-    width: 128px;
+    width: 121px;
     position: absolute; 
-    height: 128px;
+    height: 121px;
     border-radius: 50%;
     background: var(--bg-color);
     top: 66px;
-    left: 71px;
+
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+  }
+}
+@media (min-width:992px) and (max-width:1055px) {
+  .overlay{
+    width: 121px;
+    position: absolute; 
+    height: 121px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 66px;
     z-index: 0;
     transition: transform 0.3s ease-out;
   }

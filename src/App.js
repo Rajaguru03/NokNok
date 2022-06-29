@@ -7,28 +7,29 @@ import { Routes , Route, BrowserRouter } from 'react-router-dom';
 import LogIn from './components/JoinUsPage/LogInPage/LogIn.jsx';
 import SignUp from './components/JoinUsPage/SignUpPage/SignUp.jsx';
 import GInterview from './components/HomePage/GInterview';
-import CInterview from './components/HomePage/CInterview';
 import ContactUs from './components/HomePage/ContactUs';
-import AboutUs from './components/HomePage/AboutUs';
 import Main from './components/Main/Main';
 import MediaHouse from './components/Main/MediaHouse';
+import MainGInterview from './components/Main/MainGInterview';
+import MainCInterview from './components/Main/MainCInterview';
+import AboutUs from './components/HomePage/AboutUs';
 
 function App() {
   return (
     <div>
-    
       <BrowserRouter>
         <Routes>
           {/* <Route path='/' element={<Header/>} /> */}
           <Route path='/' element={<Content/>} />
           <Route path='/SignIn' element={ <LogIn/> } />
           <Route path='/SignUp' element={ <SignUp/> } />
-          <Route path='/GiveInterview' element={<GInterview/>} />
-          <Route path='/CreateInterview' element={<CInterview/>}/>
-          <Route path='/ContactUs' element={<ContactUs/>}/>
+          <Route path='/GiveInterview' element={<GInterview/>}/>
           <Route path='/AboutUs' element={<AboutUs/>}/>
-          <Route path='/Home' element={<Main/>}/>
-          <Route path='/Home/MediaHouse' element={<MediaHouse/>}/>
+          <Route path='/ContactUs' element={<ContactUs/>}/>
+          <Route path='/Main' element={<Main/>}/>
+          <Route path='/MediaHouse' element={<MediaHouse/>}/>
+          <Route path='/GInterview' element={<MainGInterview/>}/>
+          <Route path='/CInterview' element={<MainCInterview/>}/>
         </Routes>
       </BrowserRouter>
       
