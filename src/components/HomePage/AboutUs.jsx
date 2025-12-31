@@ -19,7 +19,7 @@ function AboutUs() {
             <div className='cricle2'></div>
         <Container>
             <div className='AboutUs_Title text-center my-5'>
-                <h4>Just</h4>
+                <h4>Letting you know</h4>
                 <h1>Nok Nok</h1>
                 <h5>Your Brain To Gain More Knoweledge</h5>
             </div>
