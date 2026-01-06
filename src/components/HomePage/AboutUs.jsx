@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import '../Animi.css';
-import { Container , Row , Col , } from 'react-bootstrap';
+import { Container , Row , Col , Table } from 'react-bootstrap';
 import Header from './Header';
 import Study from '../Img/Study.png';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
@@ -64,7 +64,45 @@ function AboutUs() {
                       <img src={Study} alt='none' width={470} height={500}/>
                   </Col>
                 </Row>
-      </div>       
+      </div>
+      <div className='team-section py-5'>
+        <Container>
+          <div className='text-center mb-4'>
+            <h1 style={{color:'orange'}}>Our Team</h1>
+            <p>Meet the people behind Nok Nok</p>
+          </div>
+          <Table striped bordered hover responsive className='team-table'>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Arun Kumar</td>
+                <td>arun.kumar@noknok.com</td>
+              </tr>
+              <tr>
+                <td>Priya Sharma</td>
+                <td>priya.sharma@noknok.com</td>
+              </tr>
+              <tr>
+                <td>Rahul Verma</td>
+                <td>rahul.verma@noknok.com</td>
+              </tr>
+              <tr>
+                <td>Sneha Patel</td>
+                <td>sneha.patel@noknok.com</td>
+              </tr>
+              <tr>
+                <td>Vikram Singh</td>
+                <td>vikram.singh@noknok.com</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Container>
+      </div>
     </div>
     <Footer/>
     </>
