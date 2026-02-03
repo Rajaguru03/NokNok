@@ -13,6 +13,7 @@ import MediaHouse from './components/Main/MediaHouse';
 import MainGInterview from './components/Main/MainGInterview';
 import MainCInterview from './components/Main/MainCInterview';
 import AboutUs from './components/HomePage/AboutUs';
+import ChatWidget from './components/ChatWidget/ChatWidget';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/GInterview' element={<MainGInterview/>}/>
           <Route path='/CInterview' element={<MainCInterview/>}/>
         </Routes>
+        <ChatWidget />
       </BrowserRouter>
       
     </div>
