@@ -3,7 +3,7 @@ import '../../App.css'
 import Header from './Header'
 import '../Animi.css'
 import { Link } from 'react-router-dom'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Table } from 'react-bootstrap'
 import Footer from './Footer'
 
 function GInterview() {
@@ -73,8 +73,58 @@ function GInterview() {
         </Container>
       </div>
     </div>
+    <div className='interview-section py-5'>
+      <Container>
+        <div className='text-center mb-4'>
+          <h1 style={{color:'orange'}}>Available Interviews</h1>
+          <p>Browse through our collection of interviews</p>
+        </div>
+        <Table striped bordered hover responsive className='interview-table'>
+          <thead>
+            <tr>
+              <th>Interview Title</th>
+              <th>Category</th>
+              <th>Difficulty</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>React Fundamentals</td>
+              <td>Frontend Development</td>
+              <td>Beginner</td>
+              <td>30 mins</td>
+            </tr>
+            <tr>
+              <td>Node.js Basics</td>
+              <td>Backend Development</td>
+              <td>Intermediate</td>
+              <td>45 mins</td>
+            </tr>
+            <tr>
+              <td>Data Structures</td>
+              <td>Computer Science</td>
+              <td>Advanced</td>
+              <td>60 mins</td>
+            </tr>
+            <tr>
+              <td>System Design</td>
+              <td>Architecture</td>
+              <td>Advanced</td>
+              <td>90 mins</td>
+            </tr>
+            <tr>
+              <td>JavaScript ES6+</td>
+              <td>Programming</td>
+              <td>Intermediate</td>
+              <td>40 mins</td>
+            </tr>
+          </tbody>
+        </Table>
+      </Container>
+    </div>
     <div className='extra'></div>
-    
+
     <Footer/>
     </>
   )
